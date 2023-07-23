@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="./src/styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/074fa09146.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+</head>
+
+<body>
+	<div>
+		<div class="row contain">
+			<form id="city-search">
+				<input type="text" class="col-9" id="city-input" placeholder="Enter a city...">
+				<input type="submit" class="col-2" value="Search">
+			</form>
+			<button id="curr-loc">Current Location</button>
+			<div id="time" class="col-12"></div>
+			<div class="row">
+				<div class="col-8">
+					<h1>Izmir</h1>
+					<h2>Sunday 22:26, broken clouds <br />
+						Humidity: 78%, Wind: 6.69km/h
+					</h2>
+				</div>
+				<div class="col-4 curr">
+						<span id="degree">16°</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col"><span>Sun</span> <i class="fa-solid fa-cloud-sun"></i> <span>16°C</span></div>
+				<div class="col"><span>Mon</span> <i class="fa-solid fa-cloud-bolt"></i> <span>16°C</span></div>
+				<div class="col"><span>Tue</span> <i class="fa-solid fa-cloud-bolt"></i> <span>16°C</span></div>
+				<div class="col"><span>Wed</span> <i class="fa-solid fa-cloud-sun-rain"></i> <span>16°C</span></div>
+				<div class="col"><span>Thu</span> <i class="fa-solid fa-sun"></i> <span>16°C</span></div>
+			</div>
+		</div>
+	</div>
+	<script src="src/index.js"></script>
+</body>
+
+</html>
